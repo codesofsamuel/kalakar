@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #f2f4f8;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #f2f4f8;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Header Right Section */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Search Bar */
+.search-container {
+  position: relative;
+  width: 180px;
+}
+
+input[type="search"] {
+  width: 180px;
+  padding: 8px 35px 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  border: 1.5px solid #ccc;
+  background: url('data:image/svg+xml;utf8,<svg fill="gray" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 14a4 4 0 110-8 4 4 0 010 8z"/></svg>') no-repeat right 10px center;
+  background-size: 16px 16px;
+  box-sizing: border-box;
+}
+
+input[type="search"]:focus {
+  outline: none;
+  border-color: #ff4500;
+}
+
+/* Buttons Top Right */
+.header-right button {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.header-right button.login-btn {
+  background-color: transparent;
+  color: #000;
+  border: 1.5px solid #000;
+}
+
+.header-right button.login-btn:hover {
+  background-color: #ddd;
+}
+
+.header-right button.signup-btn {
+  background-color: #000000;
+  color: white;
+}
+
+.header-right button.signup-btn:hover {
+  background-color: #3f3f3f;
+}
+
+/* Main Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 80px 0 60px;
+  margin-top: 30px;
+}
+
+.hero-heading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 5rem;
+  font-weight: 400;
+  color: #1a202c;
+  margin-bottom: 0.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.hero-subheading {
+  font-family: 'DM Serif Display', serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  color: #1a202c;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.tagline {
+  font-size: 1.6rem;
+  color: #2d3748;
+  margin: 20px auto 40px;
+  margin-top: 40px;
+  max-width: 640px;
+  line-height: 1.5;
+}
+
+/* CTA Button */
+.cta-btn {
+  background-color: #70a7e1; /* Darker blue */
+  color: #000000; /* Black text */
+  padding: 18px 38px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.cta-btn:hover {
+  background-color: #3c7fcb;
+  transform: scale(1.03);
+}
+
+/* Feature Section */
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 60px 0;
+}
+
+.feature {
+  flex: 1 1 30%;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+}
+
+.feature h3 {
+  color: #1a202c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.feature h3 img.inline-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.feature p {
+  color: #2d3748;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+/* login/sinup */
+/* === CLEANER SOCIAL AUTH BUTTONS === */
+.auth-page {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.auth-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1a202c;
+}
+
+.auth-social {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 30px;
+background-color: #f2f4f8;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.social-btn:hover {
+  background-color: #e2e6ec;
+}
+
+.social-btn img {
+  height: 20px;
+  width: 20px;
+}
+
+.auth-note {
+  margin: 20px 0 18px;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.auth-form input {
+  padding: 10px 14px;
+  border-radius: 30px;
+  border: 1.5px solid #ccc;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #1a1a1a;
+}
+
+.auth-form input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.auth-button {
+  margin-top: 10px;
+  padding: 12px 18px;
+  background-color: #1a202c;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.auth-button:hover {
+  background-color: #333;
+}
+
+.auth-logo {
+  display: block;
+  margin: 5px 10px;
+width: 20px;
+height: 20px;
+}
+
+.auth-logo img {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
+
+.switch-link {
+  display: inline-block; /* change from block */
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.switch-link:hover {
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.forgot-password {
+  display: block;
+  text-align: right;
+  margin: 8px 0 10px;
+  font-size: 0.85rem;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.forgot-password:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.terms-checkbox {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: left;
+  margin: 10px 0;
+  display: block;
+}
+
+.terms-checkbox input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.terms-checkbox a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
