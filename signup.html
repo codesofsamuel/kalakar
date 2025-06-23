@@ -7,9 +7,19 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <a href="index.html" class="auth-logo">
-    <img src="kalakar.png" alt="Kalakar Logo" />
-  </a>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="auth-logo">
+      <img src="kalakar.png" alt="Kalakar Logo" />
+    </a>
+    <div class="header-right">
+      <button class="login-btn" onclick="location.href='login.html'">Login</button>
+      <button class="signup-btn" onclick="location.href='signup.html'">Sign Up</button>
+    </div>
+  </header>
+
+  <!-- Main Signup Box -->
   <div class="auth-page">
     <h1 class="auth-heading">Join Kalakar</h1>
 
@@ -36,17 +46,15 @@
       <input type="text" placeholder="Username" name="username" required />
       <input type="email" placeholder="Email" name="email" required />
       <input type="password" placeholder="Password" name="password" required />
-      <label class="terms-checkbox">
-  <input type="checkbox" required />
-  I accept the 
-  <a href="terms.html" target="_blank" rel="noopener">Terms of Service</a> 
-  and 
-  <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
-</label>
 
+      <label class="terms-checkbox">
+        <input type="checkbox" name="terms" required />
+        I agree to the <a href="terms.html" target="_blank">Terms</a> and <a href="privacy.html" target="_blank">Privacy Policy</a>
+      </label>
 
       <button type="submit" class="auth-button">Sign Up</button>
     </form>
+
     <a href="login.html" class="switch-link">Already have an account? Log in here</a>
   </div>
 </body>
