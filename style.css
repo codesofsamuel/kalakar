@@ -195,20 +195,81 @@ input[type="search"]:focus {
 
 /* login/sinup */
 /* === CLEANER SOCIAL AUTH BUTTONS === */
-.auth-page {
-  max-width: 400px;
-  margin: 80px auto;
-  padding: 20px;
-  text-align: center;
+
+/* General Layout */
+body {
+  background-color: #f2f4f8;
   font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header for Login/Signup */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #f2f4f8;
+}
+
+.auth-logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Header Right Buttons */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-right button {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  padding: 8px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #000;
+  border: 1.5px solid #000;
+}
+
+.login-btn:hover {
+  background-color: #ddd;
+}
+
+.signup-btn {
+  background-color: #000;
+  color: #fff;
+}   
+
+.signup-btn:hover {
+  background-color: #3f3f3f;
+}
+
+/* Auth Page Container */
+.auth-page {
+  max-width: 400px;
+  margin: 40px auto 60px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Heading */
 .auth-heading {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #1a202c;
 }
 
+/* Social Auth Buttons */
 .auth-social {
   display: flex;
   flex-direction: column;
@@ -224,7 +285,7 @@ input[type="search"]:focus {
   padding: 12px 16px;
   border: 1.5px solid #ccc;
   border-radius: 30px;
-background-color: #f2f4f8;
+  background-color: #f2f4f8;
   color: #1a1a1a;
   font-size: 0.95rem;
   font-weight: 500;
@@ -241,12 +302,14 @@ background-color: #f2f4f8;
   width: 20px;
 }
 
+/* Note Separator */
 .auth-note {
   margin: 20px 0 18px;
   font-size: 0.85rem;
   color: #666;
 }
 
+/* Form */
 .auth-form {
   display: flex;
   flex-direction: column;
@@ -269,6 +332,7 @@ background-color: #f2f4f8;
   outline: none;
 }
 
+/* Submit Button */
 .auth-button {
   margin-top: 10px;
   padding: 12px 18px;
@@ -286,22 +350,9 @@ background-color: #f2f4f8;
   background-color: #333;
 }
 
-.auth-logo {
-  display: block;
-  margin: 5px 10px;
-width: 20px;
-height: 20px;
-}
-
-.auth-logo img {
-  height: 120px;
-  width: auto;
-  display: block;
-}
-
-
+/* Switch Link */
 .switch-link {
-  display: inline-block; /* change from block */
+  display: inline-block;
   margin-top: 18px;
   font-size: 0.9rem;
   color: #1a1a1a;
@@ -314,6 +365,7 @@ height: 20px;
   border-bottom: 1px solid #1a1a1a;
 }
 
+/* Forgot Password */
 .forgot-password {
   display: block;
   text-align: right;
@@ -329,6 +381,7 @@ height: 20px;
   text-decoration: underline;
 }
 
+/* Terms Checkbox (Signup) */
 .terms-checkbox {
   font-size: 0.85rem;
   color: #555;
